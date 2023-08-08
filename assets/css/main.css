@@ -197,6 +197,10 @@ input, select, textarea {
 		user-select: none;
 	}
 
+		p.colorWhite{
+			color: #f6f8f8;
+		}
+
 		p.content {
 			-moz-columns: 20em 2;
 			-webkit-columns: 20em 2;
@@ -1861,7 +1865,7 @@ input, select, textarea {
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 300;
+		font-weight: bold;
 		height: 2.75em;
 		line-height: 2.75em;
 		min-width: 9.25em;
@@ -3328,6 +3332,7 @@ input, select, textarea {
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
+			/* color: #20b2df; */
 		}
 
 			#nav.alt ul li {
@@ -3886,11 +3891,12 @@ input, select, textarea {
 		  transform: translate(-0%,-0%);
 		}
 		.navigation{
-		  position: relative;
+		  /* position: relative;
 		  bottom: 20px;
 		  left: 50%;
 		  transform: translateX(-25%);
-		  display: flex;
+		  display: flex; */
+		  color: #585656;
 		}
 		.bar{
 		  width: 50px;
