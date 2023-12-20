@@ -36,6 +36,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+	/* color: #935d8c; */
 	font: inherit;
 	vertical-align: baseline;}
 
@@ -3354,6 +3355,10 @@ input, select, textarea {
 				}
 
 		}
+
+	#title {
+		color: #ffffff;
+	}
 
 /* Main */
 
