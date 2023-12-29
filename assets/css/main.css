@@ -2437,6 +2437,13 @@ input, select, textarea {
 				width: 100%;
 			}
 
+	.responsive-image {
+		max-width: 100%; /* Set the maximum width of the image to 100% of its container */
+		/* height: auto; Ensure the image maintains its aspect ratio */
+		display: block; /* Remove any extra space below the image */
+		margin: 0 auto; /* Center the image within its container */
+	}
+
 /* List */
 
 	ol {
@@ -2654,10 +2661,16 @@ input, select, textarea {
 			}
 
 /* Section/Article */
+	.section {
+		width: 80%; /* Set the width of your section as needed */
+		margin: 0 auto; /* Center the section on the page */
+	}
 
 	section.special, article.special {
 		text-align: center;
 	}
+
+
 
 	header.major {
 		margin-bottom: 3em;
