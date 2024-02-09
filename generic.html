@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -19,6 +14,9 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon/favicon-32x32.png"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="public/images/favicon/favicon-16x16.png"/>
 		<link rel="manifest" href="public/images/favicon/site.webmanifest">
+		<!-- slick -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -105,39 +103,13 @@
 										</p>
 									</li>
 									<li>
-										<section class="slidershow middle">
-
-									      <div class="slides">
-									        <input type="radio" name="r" id="r1" checked>
-									        <input type="radio" name="r" id="r2">
-									        <input type="radio" name="r" id="r3">
-									        <input type="radio" name="r" id="r4">
-									        <input type="radio" name="r" id="r5">
-									        <div class="slide s1">
-									          <img src="images/Tool.gif" alt="">
-									        </div>
-									        <div class="slide">
-									          <img src="images/LP.jpg" alt="">
-									        </div>
-									        <div class="slide">
-									          <img src="images/LP2.jpg" alt="">
-									        </div>
-									        <div class="slide">
-									          <img src="images/LP3.jpg" alt="">
-									        </div>
-									        <div class="slide">
-									          <img src="images/LP4.jpg" alt="">
-									        </div>
-									      </div>
-
-									      <div class="navigation">
-									        <label for="r1" class="bar"></label>
-									        <label for="r2" class="bar"></label>
-									        <label for="r3" class="bar"></label>
-									        <label for="r4" class="bar"></label>
-									        <label for="r5" class="bar"></label>
-									      </div>
-									    </section>
+										<section class="slider">
+											<div><img class="image" src="images/Tool.gif" alt=""></div>
+											<div><img class="image" src="images/LP.jpg" alt=""></div>
+											<div><img class="image" src="images/LP2.jpg" alt=""></div>
+											<div><img class="image" src="images/LP3.jpg" alt=""></div>
+											<div><img class="image" src="images/LP4.jpg" alt=""></div>
+										  </section>
 									</li>
 								</ul>
 							</section>
@@ -218,6 +190,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+			<!-- Slick JS -->
+			<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			<!-- JS for slider -->
+			<script>
+			  $(document).ready(function(){
+				$('.slider').slick({
+				  autoplay: true,
+				  autoplaySpeed: 2000,
+				  arrows: false,
+				  dots: false
+				});
+			  });
+			</script>
 	</body>
 </html>

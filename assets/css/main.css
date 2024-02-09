@@ -2400,6 +2400,28 @@ input, select, textarea {
 		.icon.alt:active {
 			background-color: rgba(255, 255, 255, 0.2);
 		}
+/* Slider */
+
+.slider {
+	border-radius: 8px; /* Apply border-radius to the entire carousel */
+	border: 0; /* Remove border */
+  }
+
+  .slider * {
+	border-radius: 8px; /* Apply border-radius to all elements inside the carousel */
+	border: 0; /* Remove border */
+	  }
+  .slider img {
+	  width: 100%; /* Ensure the image width fits within the slider */
+	  height: auto; /* Maintain aspect ratio */
+	  min-width: 200px; /* Minimum width for the images */
+	  min-height: 450px; /* Minimum height for the images */
+	  border-radius: 8px;
+	  border: 0;	
+	  display: inline-block;
+	  position: relative;
+  }
+
 
 /* Image */
 
